@@ -33,6 +33,12 @@ sl_zigbee_event_t emberAfOtaBootloadClusterClientTickCallbackEvent2; \
 sl_zigbee_event_t emberAfIdentifyClusterServerTickCallbackEvent3; \
 sl_zigbee_event_t emberAfOnOffClusterServerTickCallbackEvent3; \
 sl_zigbee_event_t emberAfOtaBootloadClusterClientTickCallbackEvent3; \
+<<<<<<< HEAD
+=======
+sl_zigbee_event_t emberAfIdentifyClusterServerTickCallbackEvent4; \
+sl_zigbee_event_t emberAfOnOffClusterServerTickCallbackEvent4; \
+sl_zigbee_event_t emberAfOtaBootloadClusterClientTickCallbackEvent4; \
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
 
 
 #define EMBER_AF_GENERATED_UC_EVENTS_INIT \
@@ -48,6 +54,12 @@ sl_zigbee_endpoint_event_init(&emberAfOtaBootloadClusterClientTickCallbackEvent2
 sl_zigbee_endpoint_event_init(&emberAfIdentifyClusterServerTickCallbackEvent3, (void *)emberAfIdentifyClusterServerTickCallback, 3); \
 sl_zigbee_endpoint_event_init(&emberAfOnOffClusterServerTickCallbackEvent3, (void *)emberAfOnOffClusterServerTickCallback, 3); \
 sl_zigbee_endpoint_event_init(&emberAfOtaBootloadClusterClientTickCallbackEvent3, (void *)emberAfOtaBootloadClusterClientTickCallback, 3); \
+<<<<<<< HEAD
+=======
+sl_zigbee_endpoint_event_init(&emberAfIdentifyClusterServerTickCallbackEvent4, (void *)emberAfIdentifyClusterServerTickCallback, 4); \
+sl_zigbee_endpoint_event_init(&emberAfOnOffClusterServerTickCallbackEvent4, (void *)emberAfOnOffClusterServerTickCallback, 4); \
+sl_zigbee_endpoint_event_init(&emberAfOtaBootloadClusterClientTickCallbackEvent4, (void *)emberAfOtaBootloadClusterClientTickCallback, 4); \
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
 
 // sl_zigbee_event_context_t structs used to populate the sli_zigbee_app_event_context table
 #define EMBER_AF_GENERATED_UC_EVENT_CONTEXT \
@@ -60,7 +72,15 @@ sl_zigbee_endpoint_event_init(&emberAfOtaBootloadClusterClientTickCallbackEvent3
 { 3, 0x3, false, EMBER_AF_LONG_POLL, EMBER_AF_OK_TO_SLEEP, &emberAfIdentifyClusterServerTickCallbackEvent3 },     \
 { 3, 0x6, false, EMBER_AF_LONG_POLL, EMBER_AF_OK_TO_SLEEP, &emberAfOnOffClusterServerTickCallbackEvent3 },     \
 { 3, 0x19, true, EMBER_AF_LONG_POLL, EMBER_AF_OK_TO_SLEEP, &emberAfOtaBootloadClusterClientTickCallbackEvent3 },     \
+<<<<<<< HEAD
 
 #define EMBER_AF_GENERATED_UC_EVENT_CONTEXT_COUNT 9
+=======
+{ 4, 0x3, false, EMBER_AF_LONG_POLL, EMBER_AF_OK_TO_SLEEP, &emberAfIdentifyClusterServerTickCallbackEvent4 },     \
+{ 4, 0x6, false, EMBER_AF_LONG_POLL, EMBER_AF_OK_TO_SLEEP, &emberAfOnOffClusterServerTickCallbackEvent4 },     \
+{ 4, 0x19, true, EMBER_AF_LONG_POLL, EMBER_AF_OK_TO_SLEEP, &emberAfOtaBootloadClusterClientTickCallbackEvent4 },     \
+
+#define EMBER_AF_GENERATED_UC_EVENT_CONTEXT_COUNT 12
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
 
 #endif // SL_CATALOG_ZIGBEE_ZCL_FRAMEWORK_CORE_PRESENT

@@ -12,6 +12,7 @@
 // values and externally saved values. Separate block is generated for
 // big-endian and little-endian cases.
 
+<<<<<<< HEAD
 #define GENERATED_DEFAULTS_COUNT (4)
 
 #if BIGENDIAN_CPU
@@ -27,6 +28,42 @@
   0x09, 'R', 'N', 'Z', 'L', '0', '3', 'C', '0', '5', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,  /* 32,DEFAULT value for cluster: Basic, attribute: model identifier, side: server */ \
   0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF,  /* 64,DEFAULT value for cluster: Over the Air Bootloading, attribute: OTA Upgrade Server ID, side: client */ \
   0xFF, 0xFF, 0xFF, 0xFF,  /* 72,DEFAULT value for cluster: Over the Air Bootloading, attribute: Offset (address) into the file, side: client */ \
+=======
+#define GENERATED_DEFAULTS_COUNT (5)
+#define HEARBEAT_TIME         4*60*60
+
+//转小端
+#define HEARBEAT_BYTES1   {(uint8_t)((HEARBEAT_TIME) >> 24)}
+#define HEARBEAT_BYTES2   {(uint8_t)((HEARBEAT_TIME) >> 16)}
+#define HEARBEAT_BYTES3   {(uint8_t)((HEARBEAT_TIME) >> 8)}
+#define HEARBEAT_BYTES4   {(uint8_t)((HEARBEAT_TIME))}
+
+/*添加私有属性步骤，GENERATED_ATTRIBUTE_COUNT +1
+  在GENERATED_ATTRIBUTES下按照格式添加
+  如果是basic 需要在ATTRIBUTE_SINGLETONS_SIZE 加上添加对应的字节数
+  如果是其他的clust  在GENERATED_CLUSTERS 列表中将对应的字节数加上去。
+  generatedAttributes 在添加新的属性之后，这个列表需要按新增的属性数加上去
+  需要注意， 内容值直接只能写不超过16byte 的值，如果是32byte 需要定义一个指向uint8_t 的数组 可以自定义数组取值赋予，也可以按照如上方式在GENERATED_DEFAULTS 中将数据叠加上去
+
+*/
+
+
+#if BIGENDIAN_CPU
+#define GENERATED_DEFAULTS { \
+  0x04, 'R', 'I', 'N', 'O', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, /* 0,DEFAULT value for cluster: Basic, attribute: manufacturer name, side: server */ \
+  0x09, 'R', 'N', 'Z', 'E', '0', '2', 'S', '0', '3', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, /* 33,DEFAULT value for cluster: Basic, attribute: model identifier, side: server */ \
+  0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, /* 66,DEFAULT value for cluster: Over the Air Bootloading, attribute: OTA Upgrade Server ID, side: client */ \
+  0xFF, 0xFF, 0xFF, 0xFF, /* 74,DEFAULT value for cluster: Over the Air Bootloading, attribute: Offset (address) into the file, side: client */ \
+  HEARBEAT_BYTES1,HEARBEAT_BYTES2,HEARBEAT_BYTES3,HEARBEAT_BYTES4,/* 78*/\
+}
+#else //!BIGENDIAN_CPU
+#define GENERATED_DEFAULTS { \
+  0x04, 'R', 'I', 'N', 'O', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, /* 0,DEFAULT value for cluster: Basic, attribute: manufacturer name, side: server */ \
+  0x0C, 'R', 'N', 'Z', 'E', '0', '2', 'S', '0', '4', '_','L', 'P', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, /* 33,DEFAULT value for cluster: Basic, attribute: model identifier, side: server */ \
+  0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF,  /* 66,DEFAULT value for cluster: Over the Air Bootloading, attribute: OTA Upgrade Server ID, side: client */ \
+  0xFF, 0xFF, 0xFF, 0xFF,  /* 74,DEFAULT value for cluster: Over the Air Bootloading, attribute: Offset (address) into the file, side: client */ \
+  HEARBEAT_BYTES1,HEARBEAT_BYTES2,HEARBEAT_BYTES3,HEARBEAT_BYTES4,/* 78*/\
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
 }
 #endif
 
@@ -37,11 +74,20 @@
 	#define GENERATED_MIN_MAX_DEFAULTS { }
 
 
+<<<<<<< HEAD
 #define GENERATED_ATTRIBUTE_COUNT (40)
+=======
+#define GENERATED_ATTRIBUTE_COUNT (46)
+
+#define XYZ_VERSION(major, minor, patch) ((major) << 6 | (minor) << 4 | (patch)) // 高位到低位-> xx yy zzzz ->01,010101 -> 1.1.5大版本 3.3.15)
+//这里的版本号每次都要和OTA的同步
+#define VERSION   XYZ_VERSION(1,0,2)
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
 
 // This is an array of EmberAfAttributeMetadata structures.
 #define GENERATED_ATTRIBUTES { \
   { 0x0000, ZCL_INT8U_ATTRIBUTE_TYPE, 1, (ATTRIBUTE_MASK_SINGLETON), { (uint8_t*)0x08  } }, /* 0 Cluster: Basic, Attribute: ZCL version, Side: server*/ \
+<<<<<<< HEAD
 		  { 0x0001, ZCL_INT8U_ATTRIBUTE_TYPE, 1, (ATTRIBUTE_MASK_SINGLETON), { (uint8_t*)0x00  } }, /* 1 Cluster: Basic, Attribute: application version, Side: server*/ \
 		  { 0x0002, ZCL_INT8U_ATTRIBUTE_TYPE, 1, (ATTRIBUTE_MASK_SINGLETON), { (uint8_t*)0x00  } }, /* 2 Cluster: Basic, Attribute: stack version, Side: server*/ \
 		  { 0x0003, ZCL_INT8U_ATTRIBUTE_TYPE, 1, (ATTRIBUTE_MASK_SINGLETON), { (uint8_t*)0x00  } }, /* 3 Cluster: Basic, Attribute: hardware version, Side: server*/ \
@@ -56,6 +102,28 @@
 	  { 0x4000, ZCL_CHAR_STRING_ATTRIBUTE_TYPE, 16, (ATTRIBUTE_MASK_SINGLETON), { NULL } }, /* 12 Cluster: Basic, Attribute: sw build id, Side: server*/ \
 	  { 0xFFFD, ZCL_INT16U_ATTRIBUTE_TYPE, 2, (ATTRIBUTE_MASK_SINGLETON), { (uint8_t*)36000  } }, /* 13 Cluster: Basic, Attribute: cluster revision, Side: server*/ \
 		  { 0xFFFD, ZCL_INT16U_ATTRIBUTE_TYPE, 2, (ATTRIBUTE_MASK_CLIENT), { (uint8_t*)2  } }, /* 14 Cluster: Identify, Attribute: cluster revision, Side: client*/ \
+=======
+		  { 0x0001, ZCL_INT8U_ATTRIBUTE_TYPE, 1, (ATTRIBUTE_MASK_SINGLETON), { (uint8_t*)VERSION  } }, /* 1 Cluster: Basic, Attribute: application version, Side: server*/ \
+		  { 0x0002, ZCL_INT8U_ATTRIBUTE_TYPE, 1, (ATTRIBUTE_MASK_SINGLETON), { (uint8_t*)0x00  } }, /* 2 Cluster: Basic, Attribute: stack version, Side: server*/ \
+		  { 0x0003, ZCL_INT8U_ATTRIBUTE_TYPE, 1, (ATTRIBUTE_MASK_SINGLETON), { (uint8_t*)0x00  } }, /* 3 Cluster: Basic, Attribute: hardware version, Side: server*/ \
+		  { 0x0004, ZCL_CHAR_STRING_ATTRIBUTE_TYPE, 33, (ATTRIBUTE_MASK_SINGLETON), { (uint8_t*)&(generatedDefaults[0]) } }, /* 4 Cluster: Basic, Attribute: manufacturer name, Side: server*/ \
+	  { 0x0005, ZCL_CHAR_STRING_ATTRIBUTE_TYPE, 33, (ATTRIBUTE_MASK_SINGLETON), { (uint8_t*)&(generatedDefaults[33]) } }, /* 5 Cluster: Basic, Attribute: model identifier, Side: server*/ \
+	  { 0x0006, ZCL_CHAR_STRING_ATTRIBUTE_TYPE, 17, (ATTRIBUTE_MASK_SINGLETON), { NULL } }, /* 6 Cluster: Basic, Attribute: date code, Side: server*/ \
+	  { 0x0007, ZCL_ENUM8_ATTRIBUTE_TYPE, 1, (ATTRIBUTE_MASK_SINGLETON), { (uint8_t*)0x03  } }, /* 7 Cluster: Basic, Attribute: power source, Side: server*/ \
+		  { 0x0008, ZCL_ENUM8_ATTRIBUTE_TYPE, 1, (ATTRIBUTE_MASK_SINGLETON), { (uint8_t*)0xFF  } }, /* 8 Cluster: Basic, Attribute: generic device class, Side: server*/ \
+		  { 0x0009, ZCL_ENUM8_ATTRIBUTE_TYPE, 1, (ATTRIBUTE_MASK_SINGLETON), { (uint8_t*)0xFF  } }, /* 9 Cluster: Basic, Attribute: generic device type, Side: server*/ \
+		  { 0x000A, ZCL_OCTET_STRING_ATTRIBUTE_TYPE, 17, (ATTRIBUTE_MASK_SINGLETON), { NULL } }, /* 10 Cluster: Basic, Attribute: product code, Side: server*/ \
+	  { 0x000B, ZCL_CHAR_STRING_ATTRIBUTE_TYPE, 65, (ATTRIBUTE_MASK_SINGLETON), { NULL } }, /* 11 Cluster: Basic, Attribute: product url, Side: server*/ \
+	  { 0x4000, ZCL_CHAR_STRING_ATTRIBUTE_TYPE, 17, (ATTRIBUTE_MASK_SINGLETON), { NULL } }, /* 12 Cluster: Basic, Attribute: sw build id, Side: server*/ \
+    { 0x0069, ZCL_INT32U_ATTRIBUTE_TYPE, 4, (ATTRIBUTE_MASK_SINGLETON), { (uint8_t*)&(generatedDefaults[78]) } }, /* 13 Cluster: Basic, Attribute: cluster revision, Side: server*/ \
+  	{ 0xFFFD, ZCL_INT16U_ATTRIBUTE_TYPE, 2, (ATTRIBUTE_MASK_SINGLETON), { (uint8_t*)3  } }, /* 13 Cluster: Basic, Attribute: cluster revision, Side: server*/ \
+{ 0x0000, ZCL_INT16U_ATTRIBUTE_TYPE, 2, (ATTRIBUTE_MASK_SINGLETON), { (uint8_t*)0x1E  } }, /* 20 Cluster: Power Configuration, Attribute: mains voltage, Side: server*/ \
+{ 0x0001, ZCL_INT8U_ATTRIBUTE_TYPE, 1, (ATTRIBUTE_MASK_SINGLETON), { (uint8_t*)0x00  } }, /* 21 Cluster: Power Configuration, Attribute: mains frequency, Side: server*/ \
+{ 0x0020, ZCL_INT8U_ATTRIBUTE_TYPE, 1, (ATTRIBUTE_MASK_SINGLETON), { (uint8_t*)30  } }, /* 22 Cluster: Power Configuration, Attribute: battery voltage, Side: server*/ \
+{ 0x0021, ZCL_INT8U_ATTRIBUTE_TYPE, 1, (ATTRIBUTE_MASK_SINGLETON), { (uint8_t*)0x64  } }, /* 23 Cluster: Power Configuration, Attribute: battery percentage remaining, Side: server*/ \
+{ 0xFFFD, ZCL_INT16U_ATTRIBUTE_TYPE, 2, (ATTRIBUTE_MASK_SINGLETON), { (uint8_t*)2  } }, /* 24 Cluster: Power Configuration, Attribute: cluster revision, Side: server*/ \
+  	  { 0xFFFD, ZCL_INT16U_ATTRIBUTE_TYPE, 2, (ATTRIBUTE_MASK_CLIENT), { (uint8_t*)2  } }, /* 14 Cluster: Identify, Attribute: cluster revision, Side: client*/ \
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
 		  { 0x0000, ZCL_INT16U_ATTRIBUTE_TYPE, 2, (ATTRIBUTE_MASK_WRITABLE), { (uint8_t*)0x0000  } }, /* 15 Cluster: Identify, Attribute: identify time, Side: server*/ \
 		  { 0xFFFD, ZCL_INT16U_ATTRIBUTE_TYPE, 2, (0x00), { (uint8_t*)2  } }, /* 16 Cluster: Identify, Attribute: cluster revision, Side: server*/ \
 		  { 0xFFFD, ZCL_INT16U_ATTRIBUTE_TYPE, 2, (ATTRIBUTE_MASK_CLIENT), { (uint8_t*)3  } }, /* 17 Cluster: Groups, Attribute: cluster revision, Side: client*/ \
@@ -69,8 +137,13 @@
 		  { 0x0010, ZCL_ENUM8_ATTRIBUTE_TYPE, 1, (ATTRIBUTE_MASK_WRITABLE), { (uint8_t*)0x00  } }, /* 25 Cluster: On/off Switch Configuration, Attribute: switch actions, Side: server*/ \
 		  { 0xFFFD, ZCL_INT16U_ATTRIBUTE_TYPE, 2, (0x00), { (uint8_t*)0x0001  } }, /* 26 Cluster: On/off Switch Configuration, Attribute: cluster revision, Side: server*/ \
 		  { 0xFFFD, ZCL_INT16U_ATTRIBUTE_TYPE, 2, (ATTRIBUTE_MASK_CLIENT), { (uint8_t*)0x0001  } }, /* 27 Cluster: Level Control, Attribute: cluster revision, Side: client*/ \
+<<<<<<< HEAD
 		  { 0x0000, ZCL_IEEE_ADDRESS_ATTRIBUTE_TYPE, 8, (ATTRIBUTE_MASK_CLIENT), { (uint8_t*)&(generatedDefaults[64]) } }, /* 28 Cluster: Over the Air Bootloading, Attribute: OTA Upgrade Server ID, Side: client*/ \
 	  { 0x0001, ZCL_INT32U_ATTRIBUTE_TYPE, 4, (ATTRIBUTE_MASK_CLIENT), { (uint8_t*)&(generatedDefaults[72]) } }, /* 29 Cluster: Over the Air Bootloading, Attribute: Offset (address) into the file, Side: client*/ \
+=======
+		  { 0x0000, ZCL_IEEE_ADDRESS_ATTRIBUTE_TYPE, 8, (ATTRIBUTE_MASK_CLIENT), { (uint8_t*)&(generatedDefaults[66]) } }, /* 28 Cluster: Over the Air Bootloading, Attribute: OTA Upgrade Server ID, Side: client*/ \
+	  { 0x0001, ZCL_INT32U_ATTRIBUTE_TYPE, 4, (ATTRIBUTE_MASK_CLIENT), { (uint8_t*)&(generatedDefaults[74]) } }, /* 29 Cluster: Over the Air Bootloading, Attribute: Offset (address) into the file, Side: client*/ \
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
 	  { 0x0006, ZCL_ENUM8_ATTRIBUTE_TYPE, 1, (ATTRIBUTE_MASK_CLIENT), { (uint8_t*)0x00  } }, /* 30 Cluster: Over the Air Bootloading, Attribute: OTA Upgrade Status, Side: client*/ \
 		  { 0x0007, ZCL_INT16U_ATTRIBUTE_TYPE, 2, (ATTRIBUTE_MASK_CLIENT), { (uint8_t*)0x1002  } }, /* 31 Cluster: Over the Air Bootloading, Attribute: Manufacturer ID, Side: client*/ \
 		  { 0x0008, ZCL_INT16U_ATTRIBUTE_TYPE, 2, (ATTRIBUTE_MASK_CLIENT), { (uint8_t*)104  } }, /* 32 Cluster: Over the Air Bootloading, Attribute: Image Type ID, Side: client*/ \
@@ -79,12 +152,17 @@
 	  { 0xFFFD, ZCL_INT16U_ATTRIBUTE_TYPE, 2, (ATTRIBUTE_MASK_CLIENT), { (uint8_t*)0x0001  } }, /* 35 Cluster: Over the Air Bootloading, Attribute: cluster revision, Side: client*/ \
 		  { 0x0001, ZCL_INT16U_ATTRIBUTE_TYPE, 2, (0x00), { (uint8_t*)0x0000  } }, /* 36 Cluster: Generic Tunnel, Attribute: maximum incoming transfer size, Side: server*/ \
 		  { 0x0002, ZCL_INT16U_ATTRIBUTE_TYPE, 2, (0x00), { (uint8_t*)0x0000  } }, /* 37 Cluster: Generic Tunnel, Attribute: maximum outgoing transfer size, Side: server*/ \
+<<<<<<< HEAD
 		  { 0x0003, ZCL_OCTET_STRING_ATTRIBUTE_TYPE, 254, (ATTRIBUTE_MASK_WRITABLE), { NULL } }, /* 38 Cluster: Generic Tunnel, Attribute: protocol address, Side: server*/ \
+=======
+		  { 0x0003, ZCL_OCTET_STRING_ATTRIBUTE_TYPE, 255, (ATTRIBUTE_MASK_WRITABLE), { NULL } }, /* 38 Cluster: Generic Tunnel, Attribute: protocol address, Side: server*/ \
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
 	  { 0xFFFD, ZCL_INT16U_ATTRIBUTE_TYPE, 2, (0x00), { (uint8_t*)0x0001  } } /* 39 Cluster: Generic Tunnel, Attribute: cluster revision, Side: server*/ \
 		 }
 
  
 
+<<<<<<< HEAD
 #define GENERATED_CLUSTER_COUNT (24)
 	
 // This is an array of EmberAfCluster structures.
@@ -135,19 +213,87 @@
 
 // Number of fixed endpoints	
 #define FIXED_ENDPOINT_COUNT (3)
+=======
+#define GENERATED_CLUSTER_COUNT (29)
+	
+// This is an array of EmberAfCluster structures.
+#define GENERATED_CLUSTERS { \
+  { 0x0000, (EmberAfAttributeMetadata*)&(generatedAttributes[0]), 15, 0, CLUSTER_MASK_SERVER, NULL }, /* 0, Endpoint Id: 1, Cluster: Basic, Side: server*/ \
+    { 0x0001, (EmberAfAttributeMetadata*)&(generatedAttributes[15]), 5, 0, CLUSTER_MASK_SERVER, NULL }, /* 1, Endpoint Id: 1, Cluster: Power Configuration, Side: server*/ \
+  	{ 0x0003, (EmberAfAttributeMetadata*)&(generatedAttributes[20]), 1, 2, CLUSTER_MASK_CLIENT, NULL }, /* 1, Endpoint Id: 1, Cluster: Identify, Side: client*/ \
+	  { 0x0003, (EmberAfAttributeMetadata*)&(generatedAttributes[21]), 2, 4, CLUSTER_MASK_SERVER, NULL }, /* 2, Endpoint Id: 1, Cluster: Identify, Side: server*/ \
+	  { 0x0004, (EmberAfAttributeMetadata*)&(generatedAttributes[24]), 1, 1, CLUSTER_MASK_SERVER, NULL }, /* 3, Endpoint Id: 1, Cluster: Groups, Side: server*/ \
+	  { 0x0006, (EmberAfAttributeMetadata*)&(generatedAttributes[26]), 2, 3, CLUSTER_MASK_CLIENT, NULL }, /* 4, Endpoint Id: 1, Cluster: On/off, Side: client*/ \
+	  { 0x0006, (EmberAfAttributeMetadata*)&(generatedAttributes[28]), 2, 3, CLUSTER_MASK_SERVER, NULL }, /* 5, Endpoint Id: 1, Cluster: On/off, Side: server*/ \
+	  { 0x0008, (EmberAfAttributeMetadata*)&(generatedAttributes[33]), 1, 2, CLUSTER_MASK_CLIENT, NULL }, /* 6, Endpoint Id: 1, Cluster: Level Control, Side: client*/ \
+	  { 0x0019, (EmberAfAttributeMetadata*)&(generatedAttributes[34]), 8, 25, CLUSTER_MASK_CLIENT, NULL }, /* 7, Endpoint Id: 1, Cluster: Over the Air Bootloading, Side: client*/ \
+	  { 0x0600, (EmberAfAttributeMetadata*)&(generatedAttributes[42]), 4, 261, CLUSTER_MASK_SERVER, NULL }, /* 8, Endpoint Id: 1, Cluster: Generic Tunnel, Side: server*/ \
+	  { 0x0000, (EmberAfAttributeMetadata*)&(generatedAttributes[0]), 14, 0, CLUSTER_MASK_SERVER, NULL }, /* 9, Endpoint Id: 2, Cluster: Basic, Side: server*/ \
+	  { 0x0003, (EmberAfAttributeMetadata*)&(generatedAttributes[21]), 1, 2, CLUSTER_MASK_SERVER, NULL }, /* 10, Endpoint Id: 2, Cluster: Identify, Side: server*/ \
+	  { 0x0006, (EmberAfAttributeMetadata*)&(generatedAttributes[26]), 2, 3, CLUSTER_MASK_CLIENT, NULL }, /* 11, Endpoint Id: 2, Cluster: On/off, Side: client*/ \
+	  { 0x0006, (EmberAfAttributeMetadata*)&(generatedAttributes[28]), 2, 3, CLUSTER_MASK_SERVER, NULL }, /* 12, Endpoint Id: 2, Cluster: On/off, Side: server*/ \
+	  { 0x0019, (EmberAfAttributeMetadata*)&(generatedAttributes[34]), 3, 13, CLUSTER_MASK_CLIENT, NULL }, /* 13, Endpoint Id: 2, Cluster: Over the Air Bootloading, Side: client*/ \
+	  { 0x0000, (EmberAfAttributeMetadata*)&(generatedAttributes[0]), 15, 0, CLUSTER_MASK_SERVER, NULL }, /* 14, Endpoint Id: 3, Cluster: Basic, Side: server*/ \
+	  { 0x0003, (EmberAfAttributeMetadata*)&(generatedAttributes[20]), 1, 2, CLUSTER_MASK_CLIENT, NULL }, /* 15, Endpoint Id: 3, Cluster: Identify, Side: client*/ \
+	  { 0x0003, (EmberAfAttributeMetadata*)&(generatedAttributes[21]), 2, 4, CLUSTER_MASK_SERVER, NULL }, /* 16, Endpoint Id: 3, Cluster: Identify, Side: server*/ \
+	  { 0x0004, (EmberAfAttributeMetadata*)&(generatedAttributes[23]), 1, 2, CLUSTER_MASK_CLIENT, NULL }, /* 17, Endpoint Id: 3, Cluster: Groups, Side: client*/ \
+	  { 0x0005, (EmberAfAttributeMetadata*)&(generatedAttributes[25]), 1, 2, CLUSTER_MASK_CLIENT, NULL }, /* 18, Endpoint Id: 3, Cluster: Scenes, Side: client*/ \
+	  { 0x0006, (EmberAfAttributeMetadata*)&(generatedAttributes[26]), 1, 2, CLUSTER_MASK_CLIENT, NULL }, /* 19, Endpoint Id: 3, Cluster: On/off, Side: client*/ \
+	  { 0x0006, (EmberAfAttributeMetadata*)&(generatedAttributes[28]), 2, 3, CLUSTER_MASK_SERVER, NULL }, /* 20, Endpoint Id: 3, Cluster: On/off, Side: server*/ \
+	  { 0x0007, (EmberAfAttributeMetadata*)&(generatedAttributes[30]), 3, 4, CLUSTER_MASK_SERVER, NULL }, /* 21, Endpoint Id: 3, Cluster: On/off Switch Configuration, Side: server*/ \
+	  { 0x0008, (EmberAfAttributeMetadata*)&(generatedAttributes[33]), 1, 2, CLUSTER_MASK_CLIENT, NULL }, /* 22, Endpoint Id: 3, Cluster: Level Control, Side: client*/ \
+	  { 0x0019, (EmberAfAttributeMetadata*)&(generatedAttributes[34]), 4, 15, CLUSTER_MASK_CLIENT, NULL }, /* 23, Endpoint Id: 3, Cluster: Over the Air Bootloading, Side: client*/ \
+    { 0x0000, (EmberAfAttributeMetadata*)&(generatedAttributes[0]), 14, 0, CLUSTER_MASK_SERVER, NULL }, /* 24, Endpoint Id: 4, Cluster: Basic, Side: server*/ \
+    { 0x0003, (EmberAfAttributeMetadata*)&(generatedAttributes[21]), 1, 2, CLUSTER_MASK_SERVER, NULL }, /* 25, Endpoint Id: 4, Cluster: Identify, Side: server*/ \
+    { 0x0006, (EmberAfAttributeMetadata*)&(generatedAttributes[26]), 2, 3, CLUSTER_MASK_CLIENT, NULL }, /* 26, Endpoint Id: 4, Cluster: On/off, Side: client*/ \
+    { 0x0006, (EmberAfAttributeMetadata*)&(generatedAttributes[28]), 2, 3, CLUSTER_MASK_SERVER, NULL }, /* 27, Endpoint Id: 4, Cluster: On/off, Side: server*/ \
+    { 0x0019, (EmberAfAttributeMetadata*)&(generatedAttributes[34]), 3, 13, CLUSTER_MASK_CLIENT, NULL }, /*28, Endpoint Id: 4, Cluster: Over the Air Bootloading, Side: client*/ \
+	 }
+
+ 
+#define GENERATED_ENDPOINT_TYPE_COUNT (4)
+
+// This is an array of EmberAfEndpointType structures.
+#define GENERATED_ENDPOINT_TYPES { \
+  { ((EmberAfCluster*)&(generatedClusters[0])), 10, 301 }, \
+	  { ((EmberAfCluster*)&(generatedClusters[10])), 5, 21 }, \
+	  { ((EmberAfCluster*)&(generatedClusters[15])), 10, 36 }, \
+    { ((EmberAfCluster*)&(generatedClusters[25])), 5, 21 }, \
+	 } 
+// Largest attribute size is needed for various buffers
+#define ATTRIBUTE_LARGEST (255)
+
+// Total size of singleton attributes
+#define ATTRIBUTE_SINGLETONS_SIZE (202)
+
+// Total size of attribute storage
+#define ATTRIBUTE_MAX_SIZE (358+21)
+
+// Number of fixed endpoints	
+#define FIXED_ENDPOINT_COUNT (4)
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
 
 // Array of endpoints that are supported, the data inside the array is the
 // endpoint number.
 #define FIXED_ENDPOINT_ARRAY { \
   1, \
   2, \
+<<<<<<< HEAD
   3 \
+=======
+  3, \
+  4 \
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
 }
 
 // Array of profile ids
 #define FIXED_PROFILE_IDS { \
   260, \
   260, \
+<<<<<<< HEAD
+=======
+  260, \
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
   260 \
 }
 
@@ -155,6 +301,10 @@
 #define FIXED_DEVICE_IDS { \
   260, \
   2064, \
+<<<<<<< HEAD
+=======
+  260, \
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
   260 \
 }
 
@@ -162,6 +312,10 @@
 #define FIXED_DEVICE_VERSIONS { \
   1, \
   1, \
+<<<<<<< HEAD
+=======
+  1, \
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
   1 \
 }
 
@@ -169,25 +323,51 @@
 #define FIXED_ENDPOINT_TYPES { \
   0, \
   1, \
+<<<<<<< HEAD
   2 \
+=======
+  2, \
+  3 \
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
 }
 
 // Array of networks supported on each endpoint
 #define FIXED_NETWORKS { \
   0, \
   0, \
+<<<<<<< HEAD
+=======
+  0, \
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
   0 \
 }
 
 // Array of EmberAfCommandMetadata structs.
 #define ZAP_COMMAND_MASK(mask) COMMAND_MASK_ ## mask
+<<<<<<< HEAD
 #define EMBER_AF_GENERATED_COMMAND_COUNT  (70)
+=======
+#define EMBER_AF_GENERATED_COMMAND_COUNT  (80)
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
 #define GENERATED_COMMANDS { \
   { 0x0000, 0x00, COMMAND_MASK_INCOMING_SERVER }, /* 0, Cluster: Basic, Command: ResetToFactoryDefaults*/ \
 	  { 0x0003, 0x00, COMMAND_MASK_INCOMING_SERVER | COMMAND_MASK_OUTGOING_CLIENT }, /* 1, Cluster: Identify, Command: Identify*/ \
 	  { 0x0003, 0x00, COMMAND_MASK_INCOMING_CLIENT | COMMAND_MASK_OUTGOING_SERVER }, /* 2, Cluster: Identify, Command: IdentifyQueryResponse*/ \
 	  { 0x0003, 0x01, COMMAND_MASK_INCOMING_SERVER | COMMAND_MASK_OUTGOING_CLIENT }, /* 3, Cluster: Identify, Command: IdentifyQuery*/ \
 	  { 0x0003, 0x40, COMMAND_MASK_INCOMING_SERVER | COMMAND_MASK_OUTGOING_CLIENT }, /* 4, Cluster: Identify, Command: TriggerEffect*/ \
+<<<<<<< HEAD
+=======
+	  { 0x0004, 0x00, COMMAND_MASK_INCOMING_SERVER }, /* 5, Cluster: Groups, Command: AddGroup*/ \
+	  { 0x0004, 0x00, COMMAND_MASK_OUTGOING_SERVER }, /* 6, Cluster: Groups, Command: AddGroupResponse*/ \
+	  { 0x0004, 0x01, COMMAND_MASK_INCOMING_SERVER }, /* 7, Cluster: Groups, Command: ViewGroup*/ \
+	  { 0x0004, 0x01, COMMAND_MASK_OUTGOING_SERVER }, /* 8, Cluster: Groups, Command: ViewGroupResponse*/ \
+	  { 0x0004, 0x02, COMMAND_MASK_INCOMING_SERVER }, /* 9, Cluster: Groups, Command: GetGroupMembership*/ \
+	  { 0x0004, 0x02, COMMAND_MASK_OUTGOING_SERVER }, /* 10, Cluster: Groups, Command: GetGroupMembershipResponse*/ \
+	  { 0x0004, 0x03, COMMAND_MASK_INCOMING_SERVER }, /* 11, Cluster: Groups, Command: RemoveGroup*/ \
+	  { 0x0004, 0x03, COMMAND_MASK_OUTGOING_SERVER }, /* 12, Cluster: Groups, Command: RemoveGroupResponse*/ \
+	  { 0x0004, 0x04, COMMAND_MASK_INCOMING_SERVER }, /* 13, Cluster: Groups, Command: RemoveAllGroups*/ \
+	  { 0x0004, 0x05, COMMAND_MASK_INCOMING_SERVER }, /* 14, Cluster: Groups, Command: AddGroupIfIdentifying*/ \
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
 	  { 0x0004, 0x00, COMMAND_MASK_OUTGOING_CLIENT }, /* 5, Cluster: Groups, Command: AddGroup*/ \
 	  { 0x0004, 0x00, COMMAND_MASK_INCOMING_CLIENT }, /* 6, Cluster: Groups, Command: AddGroupResponse*/ \
 	  { 0x0004, 0x01, COMMAND_MASK_OUTGOING_CLIENT }, /* 7, Cluster: Groups, Command: ViewGroup*/ \
@@ -270,9 +450,16 @@
   { 0x00, 0x00 } \
 																																								 } 
 // Array of EmberAfPluginReportingEntry structures.
+<<<<<<< HEAD
 #define EMBER_AF_GENERATED_REPORTING_CONFIG_DEFAULTS_TABLE_SIZE (3)
 #define EMBER_AF_GENERATED_REPORTING_CONFIG_DEFAULTS { \
   { EMBER_ZCL_REPORTING_DIRECTION_REPORTED, 0x0001, 0x0006, 0x0000, CLUSTER_MASK_SERVER, 0x0000, 1, 65534, 0 }, /* Endpoint Id: 1, Cluster: On/off, Attribute: on/off */ \
+=======
+#define EMBER_AF_GENERATED_REPORTING_CONFIG_DEFAULTS_TABLE_SIZE (4)
+#define EMBER_AF_GENERATED_REPORTING_CONFIG_DEFAULTS { \
+    { EMBER_ZCL_REPORTING_DIRECTION_REPORTED, 0x0001, 0x0001, 0x0021, CLUSTER_MASK_SERVER, 0x0000, 1, 65534, 0 }, /* Endpoint Id: 1, Cluster: Power Configuration, Attribute: battery percentage remaining */ \
+    { EMBER_ZCL_REPORTING_DIRECTION_REPORTED, 0x0001, 0x0006, 0x0000, CLUSTER_MASK_SERVER, 0x0000, 1, 65534, 0 }, /* Endpoint Id: 1, Cluster: On/off, Attribute: on/off */ \
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
 	  { EMBER_ZCL_REPORTING_DIRECTION_REPORTED, 0x0002, 0x0006, 0x0000, CLUSTER_MASK_SERVER, 0x0000, 1, 65534, 0 }, /* Endpoint Id: 2, Cluster: On/off, Attribute: on/off */ \
 	  { EMBER_ZCL_REPORTING_DIRECTION_REPORTED, 0x0003, 0x0006, 0x0000, CLUSTER_MASK_SERVER, 0x0000, 1, 65534, 0 }, /* Endpoint Id: 3, Cluster: On/off, Attribute: on/off */ \
 	 } 
@@ -282,6 +469,10 @@
 
 // All Enabled Clusters
 #define ZCL_USING_BASIC_CLUSTER_SERVER
+<<<<<<< HEAD
+=======
+#define ZCL_USING_POWER_CONFIG_CLUSTER_SERVER
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
 #define ZCL_USING_IDENTIFY_CLUSTER_CLIENT
 #define ZCL_USING_IDENTIFY_CLUSTER_SERVER
 #define ZCL_USING_GROUPS_CLUSTER_CLIENT
@@ -298,6 +489,7 @@
 #define ZCL_USING_ZLL_COMMISSIONING_CLUSTER_SERVER
 
 // Cluster Counts
+<<<<<<< HEAD
 #define EMBER_AF_BASIC_CLUSTER_SERVER_ENDPOINT_COUNT (3)
 #define EMBER_AF_IDENTIFY_CLUSTER_CLIENT_ENDPOINT_COUNT (3)
 #define EMBER_AF_IDENTIFY_CLUSTER_SERVER_ENDPOINT_COUNT (3)
@@ -309,6 +501,20 @@
 #define EMBER_AF_ON_OFF_SWITCH_CONFIG_CLUSTER_SERVER_ENDPOINT_COUNT (1)
 #define EMBER_AF_LEVEL_CONTROL_CLUSTER_CLIENT_ENDPOINT_COUNT (3)
 #define EMBER_AF_OTA_BOOTLOAD_CLUSTER_CLIENT_ENDPOINT_COUNT (3)
+=======
+#define EMBER_AF_BASIC_CLUSTER_SERVER_ENDPOINT_COUNT (4)
+#define EMBER_AF_POWER_CONFIG_CLUSTER_SERVER_ENDPOINT_COUNT (1)
+#define EMBER_AF_IDENTIFY_CLUSTER_CLIENT_ENDPOINT_COUNT (3)
+#define EMBER_AF_IDENTIFY_CLUSTER_SERVER_ENDPOINT_COUNT (4)
+#define EMBER_AF_GROUPS_CLUSTER_CLIENT_ENDPOINT_COUNT (3)
+#define EMBER_AF_GROUPS_CLUSTER_SERVER_ENDPOINT_COUNT (1)
+#define EMBER_AF_SCENES_CLUSTER_CLIENT_ENDPOINT_COUNT (3)
+#define EMBER_AF_ON_OFF_CLUSTER_CLIENT_ENDPOINT_COUNT (4)
+#define EMBER_AF_ON_OFF_CLUSTER_SERVER_ENDPOINT_COUNT (4)
+#define EMBER_AF_ON_OFF_SWITCH_CONFIG_CLUSTER_SERVER_ENDPOINT_COUNT (1)
+#define EMBER_AF_LEVEL_CONTROL_CLUSTER_CLIENT_ENDPOINT_COUNT (3)
+#define EMBER_AF_OTA_BOOTLOAD_CLUSTER_CLIENT_ENDPOINT_COUNT (4)
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
 #define EMBER_AF_COLOR_CONTROL_CLUSTER_CLIENT_ENDPOINT_COUNT (1)
 #define EMBER_AF_GENERIC_TUNNEL_CLUSTER_SERVER_ENDPOINT_COUNT (1)
 #define EMBER_AF_ZLL_COMMISSIONING_CLUSTER_CLIENT_ENDPOINT_COUNT (1)
@@ -329,6 +535,14 @@
 #define ZCL_USING_BASIC_CLUSTER_PRODUCT_URL_ATTRIBUTE
 #define ZCL_USING_BASIC_CLUSTER_SW_BUILD_ID_ATTRIBUTE
 #define ZCL_USING_BASIC_CLUSTER_CLUSTER_REVISION_SERVER_ATTRIBUTE
+<<<<<<< HEAD
+=======
+#define ZCL_USING_POWER_CONFIG_CLUSTER_MAINS_VOLTAGE_ATTRIBUTE
+#define ZCL_USING_POWER_CONFIG_CLUSTER_MAINS_FREQUENCY_ATTRIBUTE
+#define ZCL_USING_POWER_CONFIG_CLUSTER_BATTERY_VOLTAGE_ATTRIBUTE
+#define ZCL_USING_POWER_CONFIG_CLUSTER_BATTERY_PERCENTAGE_REMAINING_ATTRIBUTE
+#define ZCL_USING_POWER_CONFIG_CLUSTER_CLUSTER_REVISION_SERVER_ATTRIBUTE
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
 #define ZCL_USING_IDENTIFY_CLUSTER_CLUSTER_REVISION_CLIENT_ATTRIBUTE
 #define ZCL_USING_IDENTIFY_CLUSTER_IDENTIFY_TIME_ATTRIBUTE
 #define ZCL_USING_IDENTIFY_CLUSTER_CLUSTER_REVISION_SERVER_ATTRIBUTE
@@ -359,4 +573,8 @@
 #define EMBER_AF_SUPPORT_COMMAND_DISCOVERY
 
 
+<<<<<<< HEAD
 #endif // SILABS_AF_ENDPOINT_CONFIG
+=======
+#endif // SILABS_AF_ENDPOINT_CONFIG
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8

@@ -51,7 +51,11 @@ autogen/sl_rail_util_ieee802154_phy_select.o: \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32mg21\include\efr32mg21_prs_signals.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32mg21\include\efr32mg21_dma_descriptor.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32mg21\include\efr32mg21_ldmaxbar_defines.h \
+<<<<<<< HEAD
  C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP\autogen/sl_component_catalog.h \
+=======
+ C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\autogen/sl_component_catalog.h \
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\radio\rail_lib\common\rail_assert_error_codes.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\radio\rail_lib\protocol\ieee802154\rail_ieee802154.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\radio\rail_lib\common\rail_types.h \
@@ -111,7 +115,11 @@ c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32mg21\include\efr32mg21_prs_signals.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32mg21\include\efr32mg21_dma_descriptor.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32mg21\include\efr32mg21_ldmaxbar_defines.h:
+<<<<<<< HEAD
 C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP\autogen/sl_component_catalog.h:
+=======
+C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\autogen/sl_component_catalog.h:
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\radio\rail_lib\common\rail_assert_error_codes.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\radio\rail_lib\protocol\ieee802154\rail_ieee802154.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\radio\rail_lib\common\rail_types.h:

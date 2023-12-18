@@ -52,6 +52,7 @@ gecko_sdk_4.3.0/protocol/zigbee/stack/stubs/sl_zigbee_r23_misc_support_stubs.o: 
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32mg21\include\efr32mg21_prs_signals.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32mg21\include\efr32mg21_dma_descriptor.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32mg21\include\efr32mg21_ldmaxbar_defines.h \
+<<<<<<< HEAD
  C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main_2\autogen/sl_component_catalog.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emlib\inc\em_core_generic.h \
  C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main_2\config/emlib_core_debug_config.h \
@@ -66,6 +67,22 @@ gecko_sdk_4.3.0/protocol/zigbee/stack/stubs/sl_zigbee_r23_misc_support_stubs.o: 
  C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main_2\config/sl_zigbee_binding_table_config.h \
  C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main_2\config/sl_zigbee_pro_leaf_stack_config.h \
  C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main_2\config/sl_zigbee_light_link_config.h \
+=======
+ C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\autogen/sl_component_catalog.h \
+ c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emlib\inc\em_core_generic.h \
+ C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\config/emlib_core_debug_config.h \
+ c:\users\admin\simplicitystudio\sdks\gecko_sdk\protocol\zigbee\stack\config\ember-configuration-defaults.h \
+ c:\users\admin\simplicitystudio\sdks\gecko_sdk\protocol\zigbee\app\framework\util\config.h \
+ C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\autogen/zap-config.h \
+ c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\common\inc\sl_endianness.h \
+ C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\config/zigbee_device_config.h \
+ C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\config/fragmentation-config.h \
+ c:\users\admin\simplicitystudio\sdks\gecko_sdk\protocol\zigbee\app\framework\security\security-config.h \
+ C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\config/address-table-config.h \
+ C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\config/sl_zigbee_binding_table_config.h \
+ C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\config/sl_zigbee_pro_leaf_stack_config.h \
+ C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\config/sl_zigbee_light_link_config.h \
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\radio\rail_lib\protocol\ieee802154\rail_ieee802154.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\radio\rail_lib\common\rail_types.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\radio\rail_lib\chip\efr32\efr32xg2x\rail_chip_specific.h \
@@ -130,6 +147,7 @@ c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32mg21\include\efr32mg21_prs_signals.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32mg21\include\efr32mg21_dma_descriptor.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32mg21\include\efr32mg21_ldmaxbar_defines.h:
+<<<<<<< HEAD
 C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main_2\autogen/sl_component_catalog.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emlib\inc\em_core_generic.h:
 C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main_2\config/emlib_core_debug_config.h:
@@ -144,6 +162,22 @@ C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main_2\co
 C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main_2\config/sl_zigbee_binding_table_config.h:
 C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main_2\config/sl_zigbee_pro_leaf_stack_config.h:
 C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main_2\config/sl_zigbee_light_link_config.h:
+=======
+C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\autogen/sl_component_catalog.h:
+c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emlib\inc\em_core_generic.h:
+C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\config/emlib_core_debug_config.h:
+c:\users\admin\simplicitystudio\sdks\gecko_sdk\protocol\zigbee\stack\config\ember-configuration-defaults.h:
+c:\users\admin\simplicitystudio\sdks\gecko_sdk\protocol\zigbee\app\framework\util\config.h:
+C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\autogen/zap-config.h:
+c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\common\inc\sl_endianness.h:
+C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\config/zigbee_device_config.h:
+C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\config/fragmentation-config.h:
+c:\users\admin\simplicitystudio\sdks\gecko_sdk\protocol\zigbee\app\framework\security\security-config.h:
+C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\config/address-table-config.h:
+C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\config/sl_zigbee_binding_table_config.h:
+C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\config/sl_zigbee_pro_leaf_stack_config.h:
+C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\config/sl_zigbee_light_link_config.h:
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\radio\rail_lib\protocol\ieee802154\rail_ieee802154.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\radio\rail_lib\common\rail_types.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\radio\rail_lib\chip\efr32\efr32xg2x\rail_chip_specific.h:

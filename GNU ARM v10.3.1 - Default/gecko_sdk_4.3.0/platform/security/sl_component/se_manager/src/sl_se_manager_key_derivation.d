@@ -48,7 +48,11 @@ gecko_sdk_4.3.0/platform/security/sl_component/se_manager/src/sl_se_manager_key_
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32mg21\include\efr32mg21_prs_signals.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32mg21\include\efr32mg21_dma_descriptor.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32mg21\include\efr32mg21_ldmaxbar_defines.h \
+<<<<<<< HEAD
  C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP\autogen/sl_component_catalog.h \
+=======
+ C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\autogen/sl_component_catalog.h \
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\security\sl_component\se_manager\inc\sl_se_manager_key_handling.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\security\sl_component\se_manager\inc\sl_se_manager_types.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\security\sl_component\se_manager\inc\sl_se_manager_defines.h \
@@ -109,7 +113,11 @@ c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32mg21\include\efr32mg21_prs_signals.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32mg21\include\efr32mg21_dma_descriptor.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32mg21\include\efr32mg21_ldmaxbar_defines.h:
+<<<<<<< HEAD
 C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP\autogen/sl_component_catalog.h:
+=======
+C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\autogen/sl_component_catalog.h:
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\security\sl_component\se_manager\inc\sl_se_manager_key_handling.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\security\sl_component\se_manager\inc\sl_se_manager_types.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\security\sl_component\se_manager\inc\sl_se_manager_defines.h:

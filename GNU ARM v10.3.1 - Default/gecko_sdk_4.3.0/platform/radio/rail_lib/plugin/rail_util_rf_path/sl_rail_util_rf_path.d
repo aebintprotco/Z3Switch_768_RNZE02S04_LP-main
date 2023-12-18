@@ -50,10 +50,17 @@ gecko_sdk_4.3.0/platform/radio/rail_lib/plugin/rail_util_rf_path/sl_rail_util_rf
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32mg21\include\efr32mg21_prs_signals.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32mg21\include\efr32mg21_dma_descriptor.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32mg21\include\efr32mg21_ldmaxbar_defines.h \
+<<<<<<< HEAD
  C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP\autogen/sl_component_catalog.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\radio\rail_lib\common\rail_assert_error_codes.h \
  C:/Users/admin/SimplicityStudio/SDKs/gecko_sdk/platform/radio/rail_lib/plugin/rail_util_rf_path/sl_rail_util_rf_path.h \
  C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP\config/sl_rail_util_rf_path_config.h \
+=======
+ C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\autogen/sl_component_catalog.h \
+ c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\radio\rail_lib\common\rail_assert_error_codes.h \
+ C:/Users/admin/SimplicityStudio/SDKs/gecko_sdk/platform/radio/rail_lib/plugin/rail_util_rf_path/sl_rail_util_rf_path.h \
+ C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\config/sl_rail_util_rf_path_config.h \
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\radio\rail_lib\common\rail_types.h
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\common\toolchain\inc\sl_gcc_preinclude.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\radio\rail_lib\common\rail.h:
@@ -105,8 +112,15 @@ c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32mg21\include\efr32mg21_prs_signals.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32mg21\include\efr32mg21_dma_descriptor.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32mg21\include\efr32mg21_ldmaxbar_defines.h:
+<<<<<<< HEAD
 C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP\autogen/sl_component_catalog.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\radio\rail_lib\common\rail_assert_error_codes.h:
 C:/Users/admin/SimplicityStudio/SDKs/gecko_sdk/platform/radio/rail_lib/plugin/rail_util_rf_path/sl_rail_util_rf_path.h:
 C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP\config/sl_rail_util_rf_path_config.h:
+=======
+C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\autogen/sl_component_catalog.h:
+c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\radio\rail_lib\common\rail_assert_error_codes.h:
+C:/Users/admin/SimplicityStudio/SDKs/gecko_sdk/platform/radio/rail_lib/plugin/rail_util_rf_path/sl_rail_util_rf_path.h:
+C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\config/sl_rail_util_rf_path_config.h:
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\radio\rail_lib\common\rail_types.h:

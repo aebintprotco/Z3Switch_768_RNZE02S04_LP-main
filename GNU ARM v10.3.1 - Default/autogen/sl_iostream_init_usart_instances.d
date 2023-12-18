@@ -3,7 +3,11 @@ autogen/sl_iostream_init_usart_instances.o: \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\common\toolchain\inc\sl_gcc_preinclude.h \
  ../autogen/sl_component_catalog.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\service\power_manager\inc\sl_power_manager.h \
+<<<<<<< HEAD
  C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP\config/sl_power_manager_config.h \
+=======
+ C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\config/sl_power_manager_config.h \
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\common\inc\sl_slist.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\common\inc\sl_status.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\service\sleeptimer\inc\sl_sleeptimer.h \
@@ -57,14 +61,22 @@ autogen/sl_iostream_init_usart_instances.o: \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32mg21\include\efr32mg21_prs_signals.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32mg21\include\efr32mg21_dma_descriptor.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32mg21\include\efr32mg21_ldmaxbar_defines.h \
+<<<<<<< HEAD
  C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP\autogen/sl_component_catalog.h \
+=======
+ C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\autogen/sl_component_catalog.h \
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\service\iostream\inc\sl_iostream.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\service\iostream\inc\sl_iostream_uart.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\service\iostream\inc\sl_iostream.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emdrv\dmadrv\inc\dmadrv.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emdrv\common\inc\ecode.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emlib\inc\em_ldma.h \
+<<<<<<< HEAD
  C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP\config/dmadrv_config.h \
+=======
+ C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\config/dmadrv_config.h \
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\service\iostream\inc\sl_iostream_usart.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\service\iostream\inc\sl_iostream_uart.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emlib\inc\em_cmu.h \
@@ -72,17 +84,29 @@ autogen/sl_iostream_init_usart_instances.o: \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emlib\inc\em_bus.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emlib\inc\em_core.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emlib\inc\em_core_generic.h \
+<<<<<<< HEAD
  C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP\config/emlib_core_debug_config.h \
+=======
+ C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\config/emlib_core_debug_config.h \
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emlib\inc\em_cmu_compat.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emlib\inc\em_gpio.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emlib\inc\sli_em_cmu.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emlib\inc\em_gpio.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emlib\inc\em_usart.h \
+<<<<<<< HEAD
  C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP\config/sl_iostream_usart_vcom_config.h
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\common\toolchain\inc\sl_gcc_preinclude.h:
 ../autogen/sl_component_catalog.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\service\power_manager\inc\sl_power_manager.h:
 C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP\config/sl_power_manager_config.h:
+=======
+ C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\config/sl_iostream_usart_vcom_config.h
+c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\common\toolchain\inc\sl_gcc_preinclude.h:
+../autogen/sl_component_catalog.h:
+c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\service\power_manager\inc\sl_power_manager.h:
+C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\config/sl_power_manager_config.h:
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\common\inc\sl_slist.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\common\inc\sl_status.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\service\sleeptimer\inc\sl_sleeptimer.h:
@@ -136,14 +160,22 @@ c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32mg21\include\efr32mg21_prs_signals.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32mg21\include\efr32mg21_dma_descriptor.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32mg21\include\efr32mg21_ldmaxbar_defines.h:
+<<<<<<< HEAD
 C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP\autogen/sl_component_catalog.h:
+=======
+C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\autogen/sl_component_catalog.h:
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\service\iostream\inc\sl_iostream.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\service\iostream\inc\sl_iostream_uart.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\service\iostream\inc\sl_iostream.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emdrv\dmadrv\inc\dmadrv.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emdrv\common\inc\ecode.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emlib\inc\em_ldma.h:
+<<<<<<< HEAD
 C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP\config/dmadrv_config.h:
+=======
+C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\config/dmadrv_config.h:
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\service\iostream\inc\sl_iostream_usart.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\service\iostream\inc\sl_iostream_uart.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emlib\inc\em_cmu.h:
@@ -151,10 +183,18 @@ c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\common\inc\sl_assert.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emlib\inc\em_bus.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emlib\inc\em_core.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emlib\inc\em_core_generic.h:
+<<<<<<< HEAD
 C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP\config/emlib_core_debug_config.h:
+=======
+C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\config/emlib_core_debug_config.h:
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emlib\inc\em_cmu_compat.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emlib\inc\em_gpio.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emlib\inc\sli_em_cmu.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emlib\inc\em_gpio.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emlib\inc\em_usart.h:
+<<<<<<< HEAD
 C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP\config/sl_iostream_usart_vcom_config.h:
+=======
+C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\config/sl_iostream_usart_vcom_config.h:
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8

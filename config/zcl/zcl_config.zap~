@@ -284,6 +284,7 @@
               "minInterval": 1,
               "maxInterval": 65534,
               "reportableChange": 0
+<<<<<<< HEAD
             },
             {
               "name": "cluster revision",
@@ -300,6 +301,8 @@
               "minInterval": 1,
               "maxInterval": 65534,
               "reportableChange": 0
+=======
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             }
           ]
         },

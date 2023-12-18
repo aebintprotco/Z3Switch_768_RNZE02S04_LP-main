@@ -2,7 +2,11 @@ gecko_sdk_4.3.0/platform/service/iostream/src/sl_iostream.o: \
  C:/Users/admin/SimplicityStudio/SDKs/gecko_sdk/platform/service/iostream/src/sl_iostream.c \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\common\toolchain\inc\sl_gcc_preinclude.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\service\iostream\inc\sl_iostream.h \
+<<<<<<< HEAD
  C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP\autogen/sl_component_catalog.h \
+=======
+ C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\autogen/sl_component_catalog.h \
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\common\inc\sl_enum.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\common\inc\sl_status.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emlib\inc\em_core.h \
@@ -54,11 +58,19 @@ gecko_sdk_4.3.0/platform/service/iostream/src/sl_iostream.o: \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emlib\inc\em_core_generic.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\common\inc\sl_common.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\common\inc\sl_assert.h \
+<<<<<<< HEAD
  C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP\config/emlib_core_debug_config.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\util\third_party\printf\printf.h
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\common\toolchain\inc\sl_gcc_preinclude.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\service\iostream\inc\sl_iostream.h:
 C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP\autogen/sl_component_catalog.h:
+=======
+ C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\config/emlib_core_debug_config.h \
+ c:\users\admin\simplicitystudio\sdks\gecko_sdk\util\third_party\printf\printf.h
+c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\common\toolchain\inc\sl_gcc_preinclude.h:
+c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\service\iostream\inc\sl_iostream.h:
+C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\autogen/sl_component_catalog.h:
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\common\inc\sl_enum.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\common\inc\sl_status.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emlib\inc\em_core.h:
@@ -110,5 +122,9 @@ c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emlib\inc\em_core_generic.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\common\inc\sl_common.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\common\inc\sl_assert.h:
+<<<<<<< HEAD
 C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP\config/emlib_core_debug_config.h:
+=======
+C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\config/emlib_core_debug_config.h:
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\util\third_party\printf\printf.h:
