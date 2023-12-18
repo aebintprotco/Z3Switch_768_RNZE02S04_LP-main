@@ -59,6 +59,8 @@
 #define SL_RAIL_UTIL_PTI_PERIPHERAL              PTI
 #endif
 
+
+
 // [PTI_SL_RAIL_UTIL_PTI]$
 
 // <<< sl:end pin_tool >>>
