@@ -1,5 +1,10 @@
 {
+<<<<<<< HEAD
+  "fileFormat": 2,
+  "featureLevel": 99,
+=======
   "featureLevel": 96,
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
   "creator": "zap",
   "keyValuePairs": [
     {
@@ -46,7 +51,32 @@
   ],
   "endpointTypes": [
     {
+<<<<<<< HEAD
+      "id": 1,
       "name": "Centralized",
+      "deviceTypeRef": {
+        "code": 260,
+        "profileId": 260,
+        "label": "LO-dimmerswitch",
+        "name": "LO-dimmerswitch"
+      },
+      "deviceTypes": [
+        {
+          "code": 260,
+          "profileId": 260,
+          "label": "LO-dimmerswitch",
+          "name": "LO-dimmerswitch"
+        }
+      ],
+      "deviceVersions": [
+        1
+      ],
+      "deviceIdentifiers": [
+        260
+      ],
+=======
+      "name": "Centralized",
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
       "deviceTypeName": "LO-dimmerswitch",
       "deviceTypeCode": 260,
       "deviceTypeProfileId": 260,
@@ -56,14 +86,25 @@
           "code": 0,
           "mfgCode": null,
           "define": "BASIC_CLUSTER",
+<<<<<<< HEAD
+          "side": "server",
+          "enabled": 1,
+=======
           "side": "client",
           "enabled": 0,
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
           "commands": [
             {
               "name": "ResetToFactoryDefaults",
               "code": 0,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 1,
+              "isEnabled": 1
+            }
+          ],
+=======
               "incoming": 1,
               "outgoing": 0
             }
@@ -76,6 +117,7 @@
           "define": "BASIC_CLUSTER",
           "side": "server",
           "enabled": 1,
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
           "attributes": [
             {
               "name": "ZCL version",
@@ -167,7 +209,11 @@
               "storageOption": "RAM",
               "singleton": 1,
               "bounded": 0,
+<<<<<<< HEAD
+              "defaultValue": "RNZL03C05",
+=======
               "defaultValue": "RNZE02S03",
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
               "reportable": 0,
               "minInterval": 1,
               "maxInterval": 65534,
@@ -316,24 +362,47 @@
               "code": 0,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "IdentifyQueryResponse",
+              "code": 0,
+              "mfgCode": null,
+              "source": "server",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 1,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "IdentifyQuery",
               "code": 1,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 1,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "TriggerEffect",
               "code": 64,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             }
           ],
           "attributes": [
@@ -364,12 +433,36 @@
           "enabled": 1,
           "commands": [
             {
+<<<<<<< HEAD
+              "name": "Identify",
+              "code": 0,
+              "mfgCode": null,
+              "source": "client",
+              "isIncoming": 1,
+              "isEnabled": 1
+            },
+            {
+=======
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
               "name": "IdentifyQueryResponse",
               "code": 0,
               "mfgCode": null,
               "source": "server",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "IdentifyQuery",
+              "code": 1,
+              "mfgCode": null,
+              "source": "client",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 1,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             }
           ],
           "attributes": [
@@ -420,48 +513,110 @@
               "code": 0,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "AddGroupResponse",
+              "code": 0,
+              "mfgCode": null,
+              "source": "server",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "ViewGroup",
               "code": 1,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "ViewGroupResponse",
+              "code": 1,
+              "mfgCode": null,
+              "source": "server",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "GetGroupMembership",
               "code": 2,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "GetGroupMembershipResponse",
+              "code": 2,
+              "mfgCode": null,
+              "source": "server",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "RemoveGroup",
               "code": 3,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "RemoveGroupResponse",
+              "code": 3,
+              "mfgCode": null,
+              "source": "server",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "RemoveAllGroups",
               "code": 4,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "AddGroupIfIdentifying",
               "code": 5,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             }
           ]
         },
@@ -472,6 +627,8 @@
           "define": "GROUPS_CLUSTER",
           "side": "server",
           "enabled": 1,
+<<<<<<< HEAD
+=======
           "commands": [
             {
               "name": "AddGroupResponse",
@@ -506,6 +663,7 @@
               "outgoing": 0
             }
           ],
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
           "attributes": [
             {
               "name": "name support",
@@ -538,54 +696,128 @@
               "code": 0,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "AddSceneResponse",
+              "code": 0,
+              "mfgCode": null,
+              "source": "server",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "ViewScene",
               "code": 1,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "ViewSceneResponse",
+              "code": 1,
+              "mfgCode": null,
+              "source": "server",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "RemoveScene",
               "code": 2,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "RemoveSceneResponse",
+              "code": 2,
+              "mfgCode": null,
+              "source": "server",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "RemoveAllScenes",
               "code": 3,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "RemoveAllScenesResponse",
+              "code": 3,
+              "mfgCode": null,
+              "source": "server",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "StoreScene",
               "code": 4,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "StoreSceneResponse",
+              "code": 4,
+              "mfgCode": null,
+              "source": "server",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "RecallScene",
               "code": 5,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "GetSceneMembership",
               "code": 6,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
             }
@@ -638,36 +870,56 @@
               "source": "server",
               "incoming": 1,
               "outgoing": 0
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "GetSceneMembershipResponse",
               "code": 6,
               "mfgCode": null,
               "source": "server",
+<<<<<<< HEAD
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 1,
               "outgoing": 0
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "EnhancedAddSceneResponse",
               "code": 64,
               "mfgCode": null,
               "source": "server",
+<<<<<<< HEAD
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 1,
               "outgoing": 0
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "EnhancedViewSceneResponse",
               "code": 65,
               "mfgCode": null,
               "source": "server",
+<<<<<<< HEAD
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 1,
               "outgoing": 0
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "CopySceneResponse",
               "code": 66,
               "mfgCode": null,
               "source": "server",
+<<<<<<< HEAD
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 1,
               "outgoing": 0
             }
@@ -752,6 +1004,7 @@
               "minInterval": 1,
               "maxInterval": 65534,
               "reportableChange": 0
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             }
           ]
         },
@@ -768,24 +1021,39 @@
               "code": 0,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "On",
               "code": 1,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "Toggle",
               "code": 2,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             }
           ],
           "attributes": [
@@ -866,6 +1134,8 @@
           ]
         },
         {
+<<<<<<< HEAD
+=======
           "name": "On/off Switch Configuration",
           "code": 7,
           "mfgCode": null,
@@ -916,6 +1186,7 @@
           ]
         },
         {
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
           "name": "Level Control",
           "code": 8,
           "mfgCode": null,
@@ -928,64 +1199,104 @@
               "code": 0,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "Move",
               "code": 1,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "Step",
               "code": 2,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "Stop",
               "code": 3,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "MoveToLevelWithOnOff",
               "code": 4,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "MoveWithOnOff",
               "code": 5,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "StepWithOnOff",
               "code": 6,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "StopWithOnOff",
               "code": 7,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             }
           ],
           "attributes": [
@@ -1008,6 +1319,8 @@
           ]
         },
         {
+<<<<<<< HEAD
+=======
           "name": "Level Control",
           "code": 8,
           "mfgCode": null,
@@ -1034,6 +1347,7 @@
           ]
         },
         {
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
           "name": "Over the Air Bootloading",
           "code": 25,
           "mfgCode": null,
@@ -1046,24 +1360,39 @@
               "code": 1,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "ImageBlockRequest",
               "code": 3,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "UpgradeEndRequest",
               "code": 6,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             }
           ],
           "attributes": [
@@ -1100,6 +1429,8 @@
               "reportableChange": 0
             },
             {
+<<<<<<< HEAD
+=======
               "name": "OTA Current File Version",
               "code": 2,
               "mfgCode": null,
@@ -1164,6 +1495,7 @@
               "reportableChange": 0
             },
             {
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
               "name": "OTA Upgrade Status",
               "code": 6,
               "mfgCode": null,
@@ -1262,6 +1594,8 @@
           ]
         },
         {
+<<<<<<< HEAD
+=======
           "name": "Over the Air Bootloading",
           "code": 25,
           "mfgCode": null,
@@ -1306,12 +1640,15 @@
           ]
         },
         {
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
           "name": "Generic Tunnel",
           "code": 1536,
           "mfgCode": null,
           "define": "GENERIC_TUNNEL_CLUSTER",
           "side": "server",
           "enabled": 1,
+<<<<<<< HEAD
+=======
           "commands": [
             {
               "name": "MatchProtocolAddressResponse",
@@ -1330,6 +1667,7 @@
               "outgoing": 0
             }
           ],
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
           "attributes": [
             {
               "name": "maximum incoming transfer size",
@@ -1400,7 +1738,32 @@
       ]
     },
     {
+<<<<<<< HEAD
+      "id": 2,
       "name": "Touchlink",
+      "deviceTypeRef": {
+        "code": 2064,
+        "profileId": 260,
+        "label": "ZLL-colorsceneremote",
+        "name": "ZLL-colorsceneremote"
+      },
+      "deviceTypes": [
+        {
+          "code": 2064,
+          "profileId": 260,
+          "label": "ZLL-colorsceneremote",
+          "name": "ZLL-colorsceneremote"
+        }
+      ],
+      "deviceVersions": [
+        1
+      ],
+      "deviceIdentifiers": [
+        2064
+      ],
+=======
+      "name": "Touchlink",
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
       "deviceTypeName": "ZLL-colorsceneremote",
       "deviceTypeCode": 2064,
       "deviceTypeProfileId": 260,
@@ -1410,6 +1773,8 @@
           "code": 0,
           "mfgCode": null,
           "define": "BASIC_CLUSTER",
+<<<<<<< HEAD
+=======
           "side": "client",
           "enabled": 0
         },
@@ -1418,6 +1783,7 @@
           "code": 0,
           "mfgCode": null,
           "define": "BASIC_CLUSTER",
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
           "side": "server",
           "enabled": 1,
           "attributes": [
@@ -1511,7 +1877,11 @@
               "storageOption": "RAM",
               "singleton": 1,
               "bounded": 0,
+<<<<<<< HEAD
+              "defaultValue": "RNZL03C05",
+=======
               "defaultValue": "RNZE02C03",
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
               "reportable": 0,
               "minInterval": 1,
               "maxInterval": 65534,
@@ -1644,24 +2014,47 @@
               "code": 0,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "IdentifyQueryResponse",
+              "code": 0,
+              "mfgCode": null,
+              "source": "server",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 1,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "IdentifyQuery",
               "code": 1,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 1,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "TriggerEffect",
               "code": 64,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             }
           ]
         },
@@ -1674,12 +2067,36 @@
           "enabled": 1,
           "commands": [
             {
+<<<<<<< HEAD
+              "name": "Identify",
+              "code": 0,
+              "mfgCode": null,
+              "source": "client",
+              "isIncoming": 1,
+              "isEnabled": 1
+            },
+            {
+=======
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
               "name": "IdentifyQueryResponse",
               "code": 0,
               "mfgCode": null,
               "source": "server",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "IdentifyQuery",
+              "code": 1,
+              "mfgCode": null,
+              "source": "client",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 1,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             }
           ],
           "attributes": [
@@ -1714,46 +2131,107 @@
               "code": 0,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "AddGroupResponse",
+              "code": 0,
+              "mfgCode": null,
+              "source": "server",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "ViewGroup",
               "code": 1,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "ViewGroupResponse",
+              "code": 1,
+              "mfgCode": null,
+              "source": "server",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "GetGroupMembership",
               "code": 2,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "GetGroupMembershipResponse",
+              "code": 2,
+              "mfgCode": null,
+              "source": "server",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "RemoveGroup",
               "code": 3,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "RemoveGroupResponse",
+              "code": 3,
+              "mfgCode": null,
+              "source": "server",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "RemoveAllGroups",
               "code": 4,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "AddGroupIfIdentifying",
               "code": 5,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
             }
@@ -1816,6 +2294,7 @@
               "minInterval": 1,
               "maxInterval": 65534,
               "reportableChange": 0
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             }
           ]
         },
@@ -1832,54 +2311,128 @@
               "code": 0,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "AddSceneResponse",
+              "code": 0,
+              "mfgCode": null,
+              "source": "server",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "ViewScene",
               "code": 1,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "ViewSceneResponse",
+              "code": 1,
+              "mfgCode": null,
+              "source": "server",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "RemoveScene",
               "code": 2,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "RemoveSceneResponse",
+              "code": 2,
+              "mfgCode": null,
+              "source": "server",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "RemoveAllScenes",
               "code": 3,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "RemoveAllScenesResponse",
+              "code": 3,
+              "mfgCode": null,
+              "source": "server",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "StoreScene",
               "code": 4,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "StoreSceneResponse",
+              "code": 4,
+              "mfgCode": null,
+              "source": "server",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "RecallScene",
               "code": 5,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "GetSceneMembership",
               "code": 6,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
             }
@@ -1932,36 +2485,56 @@
               "source": "server",
               "incoming": 1,
               "outgoing": 0
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "GetSceneMembershipResponse",
               "code": 6,
               "mfgCode": null,
               "source": "server",
+<<<<<<< HEAD
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 1,
               "outgoing": 0
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "EnhancedAddSceneResponse",
               "code": 64,
               "mfgCode": null,
               "source": "server",
+<<<<<<< HEAD
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 1,
               "outgoing": 0
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "EnhancedViewSceneResponse",
               "code": 65,
               "mfgCode": null,
               "source": "server",
+<<<<<<< HEAD
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 1,
               "outgoing": 0
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "CopySceneResponse",
               "code": 66,
               "mfgCode": null,
               "source": "server",
+<<<<<<< HEAD
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 1,
               "outgoing": 0
             }
@@ -2046,6 +2619,7 @@
               "minInterval": 1,
               "maxInterval": 65534,
               "reportableChange": 0
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             }
           ]
         },
@@ -2062,24 +2636,39 @@
               "code": 0,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "On",
               "code": 1,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "Toggle",
               "code": 2,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             }
           ],
           "attributes": [
@@ -2172,62 +2761,101 @@
               "code": 0,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "Move",
               "code": 1,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "Step",
               "code": 2,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "Stop",
               "code": 3,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "MoveToLevelWithOnOff",
               "code": 4,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "MoveWithOnOff",
               "code": 5,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "StepWithOnOff",
               "code": 6,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "StopWithOnOff",
               "code": 7,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
             }
@@ -2256,6 +2884,7 @@
               "minInterval": 1,
               "maxInterval": 65534,
               "reportableChange": 0
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             }
           ]
         },
@@ -2272,24 +2901,39 @@
               "code": 1,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "ImageBlockRequest",
               "code": 3,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "UpgradeEndRequest",
               "code": 6,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             }
           ],
           "attributes": [
@@ -2344,6 +2988,8 @@
           ]
         },
         {
+<<<<<<< HEAD
+=======
           "name": "Over the Air Bootloading",
           "code": 25,
           "mfgCode": null,
@@ -2352,6 +2998,7 @@
           "enabled": 0
         },
         {
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
           "name": "Color Control",
           "code": 768,
           "mfgCode": null,
@@ -2364,22 +3011,36 @@
               "code": 7,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "MoveColor",
               "code": 8,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "StepColor",
               "code": 9,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
             }
@@ -2520,6 +3181,7 @@
               "minInterval": 1,
               "maxInterval": 65534,
               "reportableChange": 0
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             }
           ]
         },
@@ -2536,80 +3198,194 @@
               "code": 0,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "ScanResponse",
+              "code": 1,
+              "mfgCode": null,
+              "source": "server",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 1,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "DeviceInformationRequest",
               "code": 2,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "DeviceInformationResponse",
+              "code": 3,
+              "mfgCode": null,
+              "source": "server",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 1,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "IdentifyRequest",
               "code": 6,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 1,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "ResetToFactoryNewRequest",
               "code": 7,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 1,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "NetworkStartRequest",
               "code": 16,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "NetworkStartResponse",
+              "code": 17,
+              "mfgCode": null,
+              "source": "server",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 1,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "NetworkJoinRouterRequest",
               "code": 18,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "NetworkJoinRouterResponse",
+              "code": 19,
+              "mfgCode": null,
+              "source": "server",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 1,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "NetworkJoinEndDeviceRequest",
               "code": 20,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "NetworkJoinEndDeviceResponse",
+              "code": 21,
+              "mfgCode": null,
+              "source": "server",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 1,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "NetworkUpdateRequest",
               "code": 22,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "EndpointInformation",
+              "code": 64,
+              "mfgCode": null,
+              "source": "server",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 1,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "GetGroupIdentifiersRequest",
               "code": 65,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "GetGroupIdentifiersResponse",
+              "code": 65,
+              "mfgCode": null,
+              "source": "server",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 1,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "GetEndpointListRequest",
               "code": 66,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "GetEndpointListResponse",
+              "code": 66,
+              "mfgCode": null,
+              "source": "server",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 1,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             }
           ]
         },
@@ -2622,75 +3398,223 @@
           "enabled": 1,
           "commands": [
             {
+<<<<<<< HEAD
+              "name": "ScanRequest",
+              "code": 0,
+              "mfgCode": null,
+              "source": "client",
+              "isIncoming": 1,
+              "isEnabled": 1
+            },
+            {
+=======
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
               "name": "ScanResponse",
               "code": 1,
               "mfgCode": null,
               "source": "server",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "DeviceInformationRequest",
+              "code": 2,
+              "mfgCode": null,
+              "source": "client",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 1,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "DeviceInformationResponse",
               "code": 3,
               "mfgCode": null,
               "source": "server",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "IdentifyRequest",
+              "code": 6,
+              "mfgCode": null,
+              "source": "client",
+              "isIncoming": 1,
+              "isEnabled": 1
+            },
+            {
+              "name": "ResetToFactoryNewRequest",
+              "code": 7,
+              "mfgCode": null,
+              "source": "client",
+              "isIncoming": 1,
+              "isEnabled": 1
+            },
+            {
+              "name": "NetworkStartRequest",
+              "code": 16,
+              "mfgCode": null,
+              "source": "client",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 1,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "NetworkStartResponse",
               "code": 17,
               "mfgCode": null,
               "source": "server",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "NetworkJoinRouterRequest",
+              "code": 18,
+              "mfgCode": null,
+              "source": "client",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 1,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "NetworkJoinRouterResponse",
               "code": 19,
               "mfgCode": null,
               "source": "server",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "NetworkJoinEndDeviceRequest",
+              "code": 20,
+              "mfgCode": null,
+              "source": "client",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 1,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "NetworkJoinEndDeviceResponse",
               "code": 21,
               "mfgCode": null,
               "source": "server",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "NetworkUpdateRequest",
+              "code": 22,
+              "mfgCode": null,
+              "source": "client",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 1,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "EndpointInformation",
               "code": 64,
               "mfgCode": null,
               "source": "server",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "GetGroupIdentifiersRequest",
+              "code": 65,
+              "mfgCode": null,
+              "source": "client",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 1,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "GetGroupIdentifiersResponse",
               "code": 65,
               "mfgCode": null,
               "source": "server",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "GetEndpointListRequest",
+              "code": 66,
+              "mfgCode": null,
+              "source": "client",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 1,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "GetEndpointListResponse",
               "code": 66,
               "mfgCode": null,
               "source": "server",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 1,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             }
           ]
         }
       ]
     },
     {
+<<<<<<< HEAD
+      "id": 3,
       "name": "Anonymous Endpoint Type",
+      "deviceTypeRef": {
+        "code": 260,
+        "profileId": 260,
+        "label": "LO-dimmerswitch",
+        "name": "LO-dimmerswitch"
+      },
+      "deviceTypes": [
+        {
+          "code": 260,
+          "profileId": 260,
+          "label": "LO-dimmerswitch",
+          "name": "LO-dimmerswitch"
+        }
+      ],
+      "deviceVersions": [
+        1
+      ],
+      "deviceIdentifiers": [
+        260
+      ],
+=======
+      "name": "Anonymous Endpoint Type",
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
       "deviceTypeName": "LO-dimmerswitch",
       "deviceTypeCode": 260,
       "deviceTypeProfileId": 260,
@@ -2700,6 +3624,8 @@
           "code": 0,
           "mfgCode": null,
           "define": "BASIC_CLUSTER",
+<<<<<<< HEAD
+=======
           "side": "client",
           "enabled": 0,
           "attributes": [
@@ -2726,6 +3652,7 @@
           "code": 0,
           "mfgCode": null,
           "define": "BASIC_CLUSTER",
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
           "side": "server",
           "enabled": 1,
           "attributes": [
@@ -2819,7 +3746,11 @@
               "storageOption": "RAM",
               "singleton": 1,
               "bounded": 0,
+<<<<<<< HEAD
+              "defaultValue": "RNZL03C05",
+=======
               "defaultValue": "RNZE02C03",
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
               "reportable": 0,
               "minInterval": 1,
               "maxInterval": 65534,
@@ -2968,24 +3899,47 @@
               "code": 0,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "IdentifyQueryResponse",
+              "code": 0,
+              "mfgCode": null,
+              "source": "server",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 1,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "IdentifyQuery",
               "code": 1,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 1,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "TriggerEffect",
               "code": 64,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 1,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             }
           ],
           "attributes": [
@@ -3016,12 +3970,44 @@
           "enabled": 1,
           "commands": [
             {
+<<<<<<< HEAD
+              "name": "Identify",
+              "code": 0,
+              "mfgCode": null,
+              "source": "client",
+              "isIncoming": 1,
+              "isEnabled": 1
+            },
+            {
+=======
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
               "name": "IdentifyQueryResponse",
               "code": 0,
               "mfgCode": null,
               "source": "server",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "IdentifyQuery",
+              "code": 1,
+              "mfgCode": null,
+              "source": "client",
+              "isIncoming": 1,
+              "isEnabled": 1
+            },
+            {
+              "name": "TriggerEffect",
+              "code": 64,
+              "mfgCode": null,
+              "source": "client",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 1,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             }
           ],
           "attributes": [
@@ -3072,48 +4058,110 @@
               "code": 0,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "AddGroupResponse",
+              "code": 0,
+              "mfgCode": null,
+              "source": "server",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "ViewGroup",
               "code": 1,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "ViewGroupResponse",
+              "code": 1,
+              "mfgCode": null,
+              "source": "server",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "GetGroupMembership",
               "code": 2,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "GetGroupMembershipResponse",
+              "code": 2,
+              "mfgCode": null,
+              "source": "server",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "RemoveGroup",
               "code": 3,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "RemoveGroupResponse",
+              "code": 3,
+              "mfgCode": null,
+              "source": "server",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "RemoveAllGroups",
               "code": 4,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "AddGroupIfIdentifying",
               "code": 5,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             }
           ],
           "attributes": [
@@ -3136,6 +4184,8 @@
           ]
         },
         {
+<<<<<<< HEAD
+=======
           "name": "Groups",
           "code": 4,
           "mfgCode": null,
@@ -3212,6 +4262,7 @@
           ]
         },
         {
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
           "name": "Scenes",
           "code": 5,
           "mfgCode": null,
@@ -3224,56 +4275,139 @@
               "code": 0,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "AddSceneResponse",
+              "code": 0,
+              "mfgCode": null,
+              "source": "server",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "ViewScene",
               "code": 1,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "ViewSceneResponse",
+              "code": 1,
+              "mfgCode": null,
+              "source": "server",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "RemoveScene",
               "code": 2,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "RemoveSceneResponse",
+              "code": 2,
+              "mfgCode": null,
+              "source": "server",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "RemoveAllScenes",
               "code": 3,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "RemoveAllScenesResponse",
+              "code": 3,
+              "mfgCode": null,
+              "source": "server",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "StoreScene",
               "code": 4,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "StoreSceneResponse",
+              "code": 4,
+              "mfgCode": null,
+              "source": "server",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "RecallScene",
               "code": 5,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "GetSceneMembership",
               "code": 6,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "GetSceneMembershipResponse",
+              "code": 6,
+              "mfgCode": null,
+              "source": "server",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             }
           ],
           "attributes": [
@@ -3296,6 +4430,8 @@
           ]
         },
         {
+<<<<<<< HEAD
+=======
           "name": "Scenes",
           "code": 5,
           "mfgCode": null,
@@ -3452,6 +4588,7 @@
           ]
         },
         {
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
           "name": "On/off",
           "code": 6,
           "mfgCode": null,
@@ -3464,24 +4601,39 @@
               "code": 0,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "On",
               "code": 1,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "Toggle",
               "code": 2,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             }
           ],
           "attributes": [
@@ -3550,6 +4702,8 @@
           "code": 7,
           "mfgCode": null,
           "define": "ON_OFF_SWITCH_CONFIG_CLUSTER",
+<<<<<<< HEAD
+=======
           "side": "client",
           "enabled": 0,
           "attributes": [
@@ -3576,6 +4730,7 @@
           "code": 7,
           "mfgCode": null,
           "define": "ON_OFF_SWITCH_CONFIG_CLUSTER",
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
           "side": "server",
           "enabled": 1,
           "attributes": [
@@ -3642,64 +4797,104 @@
               "code": 0,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "Move",
               "code": 1,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "Step",
               "code": 2,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "Stop",
               "code": 3,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "MoveToLevelWithOnOff",
               "code": 4,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "MoveWithOnOff",
               "code": 5,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "StepWithOnOff",
               "code": 6,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "StopWithOnOff",
               "code": 7,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             }
           ],
           "attributes": [
@@ -3722,6 +4917,8 @@
           ]
         },
         {
+<<<<<<< HEAD
+=======
           "name": "Level Control",
           "code": 8,
           "mfgCode": null,
@@ -3780,6 +4977,7 @@
           ]
         },
         {
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
           "name": "Over the Air Bootloading",
           "code": 25,
           "mfgCode": null,
@@ -3788,28 +4986,78 @@
           "enabled": 1,
           "commands": [
             {
+<<<<<<< HEAD
+              "name": "ImageNotify",
+              "code": 0,
+              "mfgCode": null,
+              "source": "server",
+              "isIncoming": 1,
+              "isEnabled": 1
+            },
+            {
+=======
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
               "name": "QueryNextImageRequest",
               "code": 1,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "QueryNextImageResponse",
+              "code": 2,
+              "mfgCode": null,
+              "source": "server",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "ImageBlockRequest",
               "code": 3,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "ImageBlockResponse",
+              "code": 5,
+              "mfgCode": null,
+              "source": "server",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             },
             {
               "name": "UpgradeEndRequest",
               "code": 6,
               "mfgCode": null,
               "source": "client",
+<<<<<<< HEAD
+              "isIncoming": 0,
+              "isEnabled": 1
+            },
+            {
+              "name": "UpgradeEndResponse",
+              "code": 7,
+              "mfgCode": null,
+              "source": "server",
+              "isIncoming": 1,
+              "isEnabled": 1
+=======
               "incoming": 0,
               "outgoing": 1
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
             }
           ],
           "attributes": [
@@ -3878,6 +5126,8 @@
               "reportableChange": 0
             }
           ]
+<<<<<<< HEAD
+=======
         },
         {
           "name": "Over the Air Bootloading",
@@ -3938,6 +5188,7 @@
               "reportableChange": 0
             }
           ]
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
         }
       ]
     }
@@ -3948,27 +5199,39 @@
       "endpointTypeIndex": 0,
       "profileId": 260,
       "endpointId": 1,
+<<<<<<< HEAD
+      "networkId": 0
+=======
       "networkId": 0,
       "endpointVersion": 1,
       "deviceIdentifier": 260
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
     },
     {
       "endpointTypeName": "Touchlink",
       "endpointTypeIndex": 1,
       "profileId": 260,
       "endpointId": 2,
+<<<<<<< HEAD
+      "networkId": 0
+=======
       "networkId": 0,
       "endpointVersion": 1,
       "deviceIdentifier": 2064
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
     },
     {
       "endpointTypeName": "Anonymous Endpoint Type",
       "endpointTypeIndex": 2,
       "profileId": 260,
       "endpointId": 3,
+<<<<<<< HEAD
+      "networkId": 0
+=======
       "networkId": 0,
       "endpointVersion": 1,
       "deviceIdentifier": 260
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
     }
   ],
   "log": []

@@ -46,7 +46,11 @@ gecko_sdk_4.3.0/platform/emdrv/dmadrv/src/dmadrv.o: \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32mg21\include\efr32mg21_prs_signals.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32mg21\include\efr32mg21_dma_descriptor.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32mg21\include\efr32mg21_ldmaxbar_defines.h \
+<<<<<<< HEAD
+ C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP\autogen/sl_component_catalog.h \
+=======
  C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\autogen/sl_component_catalog.h \
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emlib\inc\em_cmu.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\common\inc\sl_assert.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emlib\inc\em_bus.h \
@@ -54,7 +58,11 @@ gecko_sdk_4.3.0/platform/emdrv/dmadrv/src/dmadrv.o: \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emlib\inc\em_core_generic.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\common\inc\sl_common.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\common\inc\sl_assert.h \
+<<<<<<< HEAD
+ C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP\config/emlib_core_debug_config.h \
+=======
  C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\config/emlib_core_debug_config.h \
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emlib\inc\em_cmu_compat.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emlib\inc\em_gpio.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\common\inc\sl_enum.h \
@@ -63,7 +71,11 @@ gecko_sdk_4.3.0/platform/emdrv/dmadrv/src/dmadrv.o: \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emdrv\dmadrv\inc\dmadrv.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emdrv\common\inc\ecode.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emlib\inc\em_ldma.h \
+<<<<<<< HEAD
+ C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP\config/dmadrv_config.h
+=======
  C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\config/dmadrv_config.h
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\common\toolchain\inc\sl_gcc_preinclude.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32mg21\include\em_device.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32mg21\include\efr32mg21a010f768im32.h:
@@ -110,7 +122,11 @@ c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32mg21\include\efr32mg21_prs_signals.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32mg21\include\efr32mg21_dma_descriptor.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32mg21\include\efr32mg21_ldmaxbar_defines.h:
+<<<<<<< HEAD
+C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP\autogen/sl_component_catalog.h:
+=======
 C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\autogen/sl_component_catalog.h:
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emlib\inc\em_cmu.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\common\inc\sl_assert.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emlib\inc\em_bus.h:
@@ -118,7 +134,11 @@ c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emlib\inc\em_core.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emlib\inc\em_core_generic.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\common\inc\sl_common.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\common\inc\sl_assert.h:
+<<<<<<< HEAD
+C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP\config/emlib_core_debug_config.h:
+=======
 C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\config/emlib_core_debug_config.h:
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emlib\inc\em_cmu_compat.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emlib\inc\em_gpio.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\common\inc\sl_enum.h:
@@ -127,4 +147,8 @@ c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emlib\inc\em_core.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emdrv\dmadrv\inc\dmadrv.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emdrv\common\inc\ecode.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emlib\inc\em_ldma.h:
+<<<<<<< HEAD
+C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP\config/dmadrv_config.h:
+=======
 C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\config/dmadrv_config.h:
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8

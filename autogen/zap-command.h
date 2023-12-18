@@ -75,7 +75,11 @@ emberAfFillExternalBuffer((ZCL_GLOBAL_COMMAND \
 #define emberAfFillCommandGlobalServerToClientReadAttributesResponse(clusterId, \
   readAttributeStatusRecords, readAttributeStatusRecordsLen) \
 emberAfFillExternalBuffer((ZCL_GLOBAL_COMMAND \
+<<<<<<< HEAD
+                           | ZCL_FRAME_CONTROL_SERVER_TO_CLIENT ), \
+=======
                            | ZCL_FRAME_CONTROL_SERVER_TO_CLIENT  |ZCL_DISABLE_DEFAULT_RESPONSE_MASK), \
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
                            clusterId, \
                            ZCL_READ_ATTRIBUTES_RESPONSE_COMMAND_ID, \
                            "b", \
@@ -91,7 +95,11 @@ emberAfFillExternalBuffer((ZCL_GLOBAL_COMMAND \
 #define emberAfFillCommandGlobalClientToServerReadAttributesResponse(clusterId, \
   readAttributeStatusRecords, readAttributeStatusRecordsLen) \
 emberAfFillExternalBuffer((ZCL_GLOBAL_COMMAND \
+<<<<<<< HEAD
+                           | ZCL_FRAME_CONTROL_CLIENT_TO_SERVER), \
+=======
                            | ZCL_FRAME_CONTROL_CLIENT_TO_SERVER |ZCL_DISABLE_DEFAULT_RESPONSE_MASK), \
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
                            clusterId, \
                            ZCL_READ_ATTRIBUTES_RESPONSE_COMMAND_ID, \
                            "b", \
@@ -360,6 +368,8 @@ emberAfFillExternalBuffer((ZCL_GLOBAL_COMMAND \
                            "b", \
 							  reportAttributeRecords, reportAttributeRecordsLen);
 
+<<<<<<< HEAD
+=======
 //|ZCL_DISABLE_DEFAULT_RESPONSE_MASK  不需要等网关回应response
 #define emberAfFillCommandGlobalServerToClientReportAttributes_no_response(clusterId, \
   reportAttributeRecords, reportAttributeRecordsLen) \
@@ -382,6 +392,7 @@ emberAfFillExternalBuffer((ZCL_CLUSTER_SPECIFIC_COMMAND \
 
 
 
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
 /** @brief Command description for ReportAttributes
 *
 * Command: ReportAttributes
@@ -995,11 +1006,18 @@ emberAfFillExternalBuffer((ZCL_CLUSTER_SPECIFIC_COMMAND \
 * @param groupId uint16_t
 
 */
+<<<<<<< HEAD
+#define emberAfFillCommandGroupsClusterAddGroupResponse( \
+  status,  groupId) \
+emberAfFillExternalBuffer((ZCL_CLUSTER_SPECIFIC_COMMAND \
+                           | ZCL_FRAME_CONTROL_SERVER_TO_CLIENT), \
+=======
 //| ZCL_DISABLE_DEFAULT_RESPONSE_MASK ?����|2????��
 #define emberAfFillCommandGroupsClusterAddGroupResponse( \
   status,  groupId) \
 emberAfFillExternalBuffer((ZCL_CLUSTER_SPECIFIC_COMMAND \
                            | ZCL_FRAME_CONTROL_SERVER_TO_CLIENT |ZCL_DISABLE_DEFAULT_RESPONSE_MASK), \
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
                            ZCL_GROUPS_CLUSTER_ID, \
                            ZCL_ADD_GROUP_RESPONSE_COMMAND_ID, \
                            "uv", \
@@ -1037,7 +1055,11 @@ emberAfFillExternalBuffer((ZCL_CLUSTER_SPECIFIC_COMMAND \
 #define emberAfFillCommandGroupsClusterViewGroupResponse( \
   status,  groupId,  groupName) \
 emberAfFillExternalBuffer((ZCL_CLUSTER_SPECIFIC_COMMAND \
+<<<<<<< HEAD
+                           | ZCL_FRAME_CONTROL_SERVER_TO_CLIENT), \
+=======
                            | ZCL_FRAME_CONTROL_SERVER_TO_CLIENT |ZCL_DISABLE_DEFAULT_RESPONSE_MASK), \
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
                            ZCL_GROUPS_CLUSTER_ID, \
                            ZCL_VIEW_GROUP_RESPONSE_COMMAND_ID, \
                            "uvs", \
@@ -1077,7 +1099,11 @@ emberAfFillExternalBuffer((ZCL_CLUSTER_SPECIFIC_COMMAND \
 #define emberAfFillCommandGroupsClusterGetGroupMembershipResponse( \
   capacity,  groupCount,  groupList, groupListLen) \
 emberAfFillExternalBuffer((ZCL_CLUSTER_SPECIFIC_COMMAND \
+<<<<<<< HEAD
+                           | ZCL_FRAME_CONTROL_SERVER_TO_CLIENT), \
+=======
                            | ZCL_FRAME_CONTROL_SERVER_TO_CLIENT |ZCL_DISABLE_DEFAULT_RESPONSE_MASK), \
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
                            ZCL_GROUPS_CLUSTER_ID, \
                            ZCL_GET_GROUP_MEMBERSHIP_RESPONSE_COMMAND_ID, \
                            "uub", \
@@ -1113,7 +1139,11 @@ emberAfFillExternalBuffer((ZCL_CLUSTER_SPECIFIC_COMMAND \
 #define emberAfFillCommandGroupsClusterRemoveGroupResponse( \
   status,  groupId) \
 emberAfFillExternalBuffer((ZCL_CLUSTER_SPECIFIC_COMMAND \
+<<<<<<< HEAD
+                           | ZCL_FRAME_CONTROL_SERVER_TO_CLIENT), \
+=======
                            | ZCL_FRAME_CONTROL_SERVER_TO_CLIENT |ZCL_DISABLE_DEFAULT_RESPONSE_MASK), \
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
                            ZCL_GROUPS_CLUSTER_ID, \
                            ZCL_REMOVE_GROUP_RESPONSE_COMMAND_ID, \
                            "uv", \
