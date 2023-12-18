@@ -3,10 +3,17 @@ gecko_sdk_4.3.0/platform/security/sl_component/sl_psa_driver/src/sli_se_opaque_d
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\common\toolchain\inc\sl_gcc_preinclude.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\security\sl_component\sl_psa_driver\inc\sli_psa_driver_features.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\util\third_party\mbedtls\include\mbedtls\build_info.h \
+<<<<<<< HEAD
+ C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP\config/sl_mbedtls_config.h \
+ C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP\autogen/sli_mbedtls_config_autogen.h \
+ c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\security\sl_component\sl_mbedtls_support\config\sli_mbedtls_omnipresent.h \
+ C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP\autogen/sl_component_catalog.h \
+=======
  C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\config/sl_mbedtls_config.h \
  C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\autogen/sli_mbedtls_config_autogen.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\security\sl_component\sl_mbedtls_support\config\sli_mbedtls_omnipresent.h \
  C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\autogen/sl_component_catalog.h \
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32mg21\include\em_device.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32mg21\include\efr32mg21a010f768im32.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\cmsis\core\include\core_cm33.h \
@@ -56,6 +63,15 @@ gecko_sdk_4.3.0/platform/security/sl_component/sl_psa_driver/src/sli_se_opaque_d
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emlib\inc\em_se.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\common\inc\sl_common.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\common\inc\sl_assert.h \
+<<<<<<< HEAD
+ C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP\config/sl_mbedtls_device_config.h \
+ C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP\autogen/sli_mbedtls_config_transform_autogen.h \
+ c:\users\admin\simplicitystudio\sdks\gecko_sdk\util\third_party\mbedtls\include\mbedtls\config_psa.h \
+ C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP\config/psa_crypto_config.h \
+ C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP\autogen/sli_psa_config_autogen.h \
+ c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\security\sl_component\sl_mbedtls_support\config\sli_psa_acceleration.h \
+ C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP\autogen/sli_psa_builtin_config_autogen.h \
+=======
  C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\config/sl_mbedtls_device_config.h \
  C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\autogen/sli_mbedtls_config_transform_autogen.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\util\third_party\mbedtls\include\mbedtls\config_psa.h \
@@ -63,14 +79,22 @@ gecko_sdk_4.3.0/platform/security/sl_component/sl_psa_driver/src/sli_se_opaque_d
  C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\autogen/sli_psa_config_autogen.h \
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\security\sl_component\sl_mbedtls_support\config\sli_psa_acceleration.h \
  C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\autogen/sli_psa_builtin_config_autogen.h \
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
  c:\users\admin\simplicitystudio\sdks\gecko_sdk\util\third_party\mbedtls\include\mbedtls\check_config.h
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\common\toolchain\inc\sl_gcc_preinclude.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\security\sl_component\sl_psa_driver\inc\sli_psa_driver_features.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\util\third_party\mbedtls\include\mbedtls\build_info.h:
+<<<<<<< HEAD
+C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP\config/sl_mbedtls_config.h:
+C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP\autogen/sli_mbedtls_config_autogen.h:
+c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\security\sl_component\sl_mbedtls_support\config\sli_mbedtls_omnipresent.h:
+C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP\autogen/sl_component_catalog.h:
+=======
 C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\config/sl_mbedtls_config.h:
 C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\autogen/sli_mbedtls_config_autogen.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\security\sl_component\sl_mbedtls_support\config\sli_mbedtls_omnipresent.h:
 C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\autogen/sl_component_catalog.h:
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32mg21\include\em_device.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\device\siliconlabs\efr32mg21\include\efr32mg21a010f768im32.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\cmsis\core\include\core_cm33.h:
@@ -120,6 +144,15 @@ c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\security\sl_component\sl
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\emlib\inc\em_se.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\common\inc\sl_common.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\common\inc\sl_assert.h:
+<<<<<<< HEAD
+C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP\config/sl_mbedtls_device_config.h:
+C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP\autogen/sli_mbedtls_config_transform_autogen.h:
+c:\users\admin\simplicitystudio\sdks\gecko_sdk\util\third_party\mbedtls\include\mbedtls\config_psa.h:
+C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP\config/psa_crypto_config.h:
+C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP\autogen/sli_psa_config_autogen.h:
+c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\security\sl_component\sl_mbedtls_support\config\sli_psa_acceleration.h:
+C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP\autogen/sli_psa_builtin_config_autogen.h:
+=======
 C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\config/sl_mbedtls_device_config.h:
 C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\autogen/sli_mbedtls_config_transform_autogen.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\util\third_party\mbedtls\include\mbedtls\config_psa.h:
@@ -127,4 +160,5 @@ C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\conf
 C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\autogen/sli_psa_config_autogen.h:
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\platform\security\sl_component\sl_mbedtls_support\config\sli_psa_acceleration.h:
 C:\Users\admin\SimplicityStudio\v5_workspace\Z3Switch_768_RNZE02S04_LP-main\autogen/sli_psa_builtin_config_autogen.h:
+>>>>>>> 831badb86aae7278a0339042b14081a398c407e8
 c:\users\admin\simplicitystudio\sdks\gecko_sdk\util\third_party\mbedtls\include\mbedtls\check_config.h:
